@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+Flask-playground
+{% endblock %}
+
+{% block page_content %}
+  <div class="page-header">
+    <h2>Welcome to Flask-playground</h2>
+  </div>
+  <div class="lead">
+    Click on "login", register new users then log in.
+  </div>
+  {% if current_user.is_authenticated %}
+  <div class="container">
+    <p>
+    Hello { username }, now that you have authenticated, you can make a number of changes to your account.
+    </p>
+    <p class="lead">
+    However, the main idea behind Flask-playground is for it to be changed.
+    </p>
+    <div class="container">
+      <p>Changing this project would essentially require to:</p>
+      <ul class="list-style">
+        <li>Make changes to the database</li>
+          <p>Flask-playground only has a model for users. You might want to add a "note" table to create a todo list for example. This would require that you add a note_model.py file to the app\models folder.</p>
+        <li>Create a form</li>
+          <p>I would recommend to create a "notes" folder inside the "app" then to add a "form.py" file to it to reprent your web form.</p>
+        <li>Create a template for HTML rendering of the form</li>
+          <p>a "templates" folder already exists under "app"; you should create a "notes" folder to keep your html templates separate from the rest of the application.</p>
+        <li>Create a view</li>
+          <p>I would recommend to create a "views.py" inside the "app/notes" folder previously created.</p>
+    </div>
+    <div class="container">
+      <p>Extending the folder structure as proposed will help you add, debug, test or discard your changes easily. Notice how adding functionality to create notes would not require to edit or change any of the existing part of the project.</p>
+  </div>
+  {% endif %}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
