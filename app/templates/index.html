@@ -14,7 +14,7 @@ Flask-playground
   {% if current_user.is_authenticated %}
   <div class="container">
     <p>
-    Hello { username }, now that you have authenticated, you can make a number of changes to your account.
+    Hello <b>{{ current_user.username }}</b>, now that you have authenticated, you can make a number of changes to your account.
     </p>
     <p class="lead">
     However, the main idea behind Flask-playground is for it to be changed.
