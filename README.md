@@ -83,4 +83,4 @@ Add Execute permission: ```chmod u +x /path/to/Flask-playground```
   ```
   - Type command ```flask run``` to start the Flask application then open your internet browser and go to address `http://127.0.0.1:5000`
   
-  
+  ![image](https://user-images.githubusercontent.com/22979434/73269012-e68b1180-41d3-11ea-8ae4-48b73c4f1dc6.png)
