@@ -13,11 +13,12 @@ In the meantime and on your journey to better Flask programming, feel free to ex
 # installation instructions
  **Note**: Flask-playground has been written using **Python 3.7**, make sure you have Python 3.7 or above installed before proceeding with these instructions.
  
-   - Clone or download "Flask-playground"
+   1. Clone or download "Flask-playground"
  
  ```git clone https://github.com/pn141/Flask-playground```
  
- - Start a command line, change directory to "Flask-playground" and create a virtual virtual environment. Use this link for more information on [virtual environment](https://docs.python.org/3/library/venv.html).
+   2. Start a command line, change directory to "Flask-playground" and create a virtual virtual environment. Use this link for more information on [virtual environment](https://docs.python.org/3/library/venv.html).
+
 **Linux note** You might have to add the 'Execute' permission to the "Flask-playground" directory or use 'sudo'.
 Add Execute permission: ```chmod u +x /path/to/Flask-playground```
  
