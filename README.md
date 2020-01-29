@@ -43,21 +43,21 @@ Add Execute permission: ```chmod u +x /path/to/Flask-playground```
      requirements.txt
  ```
      
- - From the command line, activate the virtual environment. In the example, <venv> represents the venv directory inside Flask-playground as described above.
+   3. From the command line and still at the root of "Flask-playground", activate the virtual environment. 
  
-  - Linux activate venv: ```source <venv>/bin/activate```
-  - Windows activate venv: ```<venv>\Scripts\activate.bat```
+  - Linux activate venv: ```source venv/bin/activate``` 
+  - Windows activate venv: ```.\venv\Scripts\activate.bat```
   
- - Make sure you are at the root of Flask-playground and install the requirements using 'pip'. 
+   4. Install the requirements for Flask-playground using 'pip'. 
  
  ```pip install -r requirements.txt```
  
- - Set environment variable FLASK_APP to "flask-playground.py"
+   5. Set environment variable FLASK_APP to "flask-playground.py"
  
   - Linux: ```export FLASK_APP=flask-playground.py```
   - Windows: ```set FLASK_APP=flask-playground.py```
   
-  - Edit file .env and add an appropriate value at the following locations:
+   6. Edit file .env and add an appropriate value at the following locations:
   
   ```
   MAIL_SERVER = '' #Enter your stmp server name
@@ -70,7 +70,7 @@ Add Execute permission: ```chmod u +x /path/to/Flask-playground```
   ```
   Before moving to the next step, remove the comments for the first 3 entries above and replace <email address> with a valid email address. Do not close the file yet.
   
-  - Finally change the location for the dev db environment appropriately then save and close ".env". 
+   7. Change the location for the "dev db environment" entry appropriately then save and close ".env". 
   
   Linux:
   ```
@@ -82,6 +82,6 @@ Add Execute permission: ```chmod u +x /path/to/Flask-playground```
   # dev db environment
   DEV_DATABASE_URL = 'sqlite:///C:\\TEMP\\flask-playground\\data-dev.sqlite'
   ```
-  - Type command ```flask run``` to start the Flask application then open your internet browser and go to address `http://127.0.0.1:5000`
+  8. Finally type command ```flask run``` to start the Flask application then open your internet browser and navigate to address `http://127.0.0.1:5000`
   
   ![image](https://user-images.githubusercontent.com/22979434/73269012-e68b1180-41d3-11ea-8ae4-48b73c4f1dc6.png)
