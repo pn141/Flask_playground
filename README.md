@@ -13,7 +13,7 @@ In the meantime and on your journey to better Flask programming, feel free to ex
 # installation instructions
  **Note**: Flask_playground has been written using **Python 3.7**, make sure you have Python 3.7 or above installed before proceeding with these instructions.
  
- **Linux note** The first installation step will create directory "Flask_playground" and all its content. You might have to add the 'Execute' permission to the "Flask-playground" directory or use 'sudo' to execute some of the commands below. To add Execute permission, use the following command: ```chmod u +x /path/to/Flask-playground```
+ **Linux note** The first installation step will create directory "Flask_playground" and all its content. You might have to add the 'Execute' permission to the "Flask_playground" directory or use 'sudo' to execute some of the commands below. To add Execute permission, use the following command: ```chmod u +x /path/to/Flask_playground```
  
    1. Clone or download "Flask_playground"
  
@@ -38,7 +38,7 @@ In the meantime and on your journey to better Flask programming, feel free to ex
      data-dev.sqlite
      data-prod.sqlite
      data-test.sqlite
-     flask-playground.py
+     flask_playground.py
      LICENSE
      README.md
      requirements.txt
