@@ -81,7 +81,7 @@ In the meantime and on your journey to better Flask programming, feel free to ex
   MAIL_SENDER = 'Flask-playground Admin <mailbox_username@smpt.example.com>'
   ```
   
-  In Flask, a secret key is used for encrypted communications with the browser like sending and storing cookies. In the .env file, this is key is set to "my secret key' (```SECRET_KEY = 'my secret key'```). You can decide to leave it as it is or, if you are concerned or have more restrictive security settings, change it for a key of your choice.
+  In Flask, a secret key is used for encrypted communications with the browser. In the .env file, this is key is set to "my secret key' (```SECRET_KEY = 'my secret key'```). You can decide to leave it as it is or, if you are concerned or have more restrictive security settings, change it for a key of your choice.
   
   Do not close this file yet.
   
