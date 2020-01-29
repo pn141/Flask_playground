@@ -12,7 +12,8 @@ In the meantime and on your journey to better Flask programming, feel free to ex
 
 # installation instructions
  **Note**: Flask-playground has been written using **Python 3.7**, make sure you have Python 3.7 or above installed before proceeding with these instructions.
- **Linux note** The first installation step will create directory "Flask-playground" and all its content. You might have to add the 'Execute' permission to the "Flask-playground" directory or use 'sudo'. To add Execute permission, use the following command: ```chmod u +x /path/to/Flask-playground```
+ 
+ **Linux note** The first installation step will create directory "Flask-playground" and all its content. You might have to add the 'Execute' permission to the "Flask-playground" directory or use 'sudo' to execute some of the commands below. To add Execute permission, use the following command: ```chmod u +x /path/to/Flask-playground```
  
    1. Clone or download "Flask-playground"
  
@@ -41,9 +42,8 @@ In the meantime and on your journey to better Flask programming, feel free to ex
      LICENSE
      README.md
      requirements.txt
- ```
-     
-   3. From the command line and still at the root of "Flask-playground", activate the virtual environment. 
+ ```   
+   3. Use the following command to activate the virtual environment. 
  
   - Linux activate venv: ```source venv/bin/activate``` 
   - Windows activate venv: ```.\venv\Scripts\activate.bat```
@@ -57,7 +57,7 @@ In the meantime and on your journey to better Flask programming, feel free to ex
   - Linux: ```export FLASK_APP=flask-playground.py```
   - Windows: ```set FLASK_APP=flask-playground.py```
   
-   6. Edit file .env and add an appropriate value at the following locations:
+   6. Edit file .env and add an appropriate value within the single quotes for the following entries:
   
   ```
   MAIL_SERVER = '' #Enter your stmp server name
@@ -68,9 +68,21 @@ In the meantime and on your journey to better Flask programming, feel free to ex
   MAIL_SUBJECT_PREFIX = '[Flask_playground]'
   MAIL_SENDER = 'Flask-playground Admin <email address>'
   ```
-  Before moving to the next step, remove the comments for the first 3 entries above and replace <email address> with a valid email address. Do not close the file yet.
+  The authentication process in Flask-playground is a 2 steps process where a confirmation email needs to be sent to new users registering with the application. This operation will fail unless these entries are changed. 
+  Once the changes, remove the comments (that is everything including and following the # character) for the first 3 entries above and replace <email address> with a valid email address. These entries should now be similar to this:
+ 
+   ```
+  MAIL_SERVER = 'smtp.example.com'
+  MAIL_USERNAME =  'mailbox_username'
+  MAIL_PASSWORD = 'mailbox password'
+  MAIL_PORT = 587
+  MAIL_USE_TLS = True
+  MAIL_SUBJECT_PREFIX = '[Flask_playground]'
+  MAIL_SENDER = 'Flask-playground Admin <mailbox_username@smpt.example.com>'
+  ```
+  Do not close this file yet.
   
-   7. Change the location for the "dev db environment" entry appropriately then save and close ".env". 
+   7. Change the location for the "dev db environment" entry then save and close ".env". 
   
   Linux:
   ```
