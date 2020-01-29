@@ -19,7 +19,7 @@ from .app import create_app, db
 from .app.models import users_model
 
 
-app = create_app('testing')
+app = create_app('development')
 migrate = Migrate(app, db)
 
 
