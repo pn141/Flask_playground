@@ -68,7 +68,7 @@ In the meantime and on your journey to better Flask programming, feel free to ex
   MAIL_SUBJECT_PREFIX = '[Flask_playground]'
   MAIL_SENDER = 'Flask_playground Admin <email address>'
   ```
-  The authentication process in Flask-playground is a 2 steps process where a confirmation email needs to be sent to new users registering with the application. This operation will fail unless these entries are changed. 
+  The authentication process in Flask_playground is a 2 steps process where a confirmation email needs to be sent to new users registering with the application. This operation will fail unless these entries are changed. 
   Once the changes, remove the comments (that is everything including and following the # character) for the first 3 entries above and replace <email address> with a valid email address. These entries should now be similar to this:
  
    ```
