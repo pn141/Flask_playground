@@ -80,6 +80,9 @@ In the meantime and on your journey to better Flask programming, feel free to ex
   MAIL_SUBJECT_PREFIX = '[Flask_playground]'
   MAIL_SENDER = 'Flask-playground Admin <mailbox_username@smpt.example.com>'
   ```
+  
+  In Flask, a secret key is used for encrypted communications with the browser like sending and storing cookies. In the .env file, this is key is set to "my secret key' (```SECRET_KEY = 'my secret key'```). You can decide to leave it as it is or, if you are concerned or have more restrictive security settings, change it for a key of your choice.
+  
   Do not close this file yet.
   
    7. Change the location for the "dev db environment" entry then save and close ".env". 
@@ -94,6 +97,8 @@ In the meantime and on your journey to better Flask programming, feel free to ex
   # dev db environment
   DEV_DATABASE_URL = 'sqlite:///C:\\TEMP\\flask-playground\\data-dev.sqlite'
   ```
+  
+  Although the project contains a sqlite database for a potential production environment, "Flask-playground" is not production ready. 
   8. Finally type command ```flask run``` to start the Flask application then open your internet browser and navigate to address `http://127.0.0.1:5000`
   
   ![image](https://user-images.githubusercontent.com/22979434/73269012-e68b1180-41d3-11ea-8ae4-48b73c4f1dc6.png)
