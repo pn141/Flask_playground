@@ -22,8 +22,8 @@ In the meantime and on your journey to better Flask programming, feel free to ex
 **Linux note** You might have to add the 'Execute' permission to the "Flask-playground" directory or use 'sudo'.
 Add Execute permission: ```chmod u +x /path/to/Flask-playground```
  
-  - Linux: ```python3 -m venv``` 
-  - Windows: ```python -m venv```
+  - Linux create virtual environment venv: ```python3 -m venv``` 
+  - Windows create virtual environment venv: ```python -m venv```
  
  Your directory tree should now be similar to one below:
  
