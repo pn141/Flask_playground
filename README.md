@@ -20,7 +20,7 @@ In the meantime and on your journey to better Flask programming, feel free to ex
    2. Start a command line, change directory to "Flask-playground" and create a virtual virtual environment. Use this link for more information on [virtual environment](https://docs.python.org/3/library/venv.html).
 
 **Linux note** You might have to add the 'Execute' permission to the "Flask-playground" directory or use 'sudo'.
-Add Execute permission: ```chmod u +x /path/to/Flask-playground```
+To add Execute permission, use the following command: ```chmod u +x /path/to/Flask-playground```
  
   - Linux create virtual environment venv: ```python3 -m venv``` 
   - Windows create virtual environment venv: ```python -m venv```
